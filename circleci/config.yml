@@ -1,0 +1,10 @@
+version: 2.1
+jobs:
+  Hello-World:
+    docker:
+      - image: ubuntu-1604-cuda-9.2:201909-23
+    steps:
+      - checkout
+      - run:
+          name: Testing
+          command: echo "Hi"
